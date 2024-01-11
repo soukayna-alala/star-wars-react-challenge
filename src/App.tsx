@@ -1,14 +1,6 @@
-import { useState } from "react";
 import "./App.css";
+import { PlanetList } from "./components/PlanetList/PlanetList.tsx";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <div>hello</div>
-    </>
-  );
+export function App() {
+  return <PlanetList></PlanetList>;
 }
-
-export default App;

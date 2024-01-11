@@ -1,0 +1,6 @@
+.listItem {
+  background: linear-gradient(#ec97d1 30%, #d7a6f8, #f6bdf3);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
