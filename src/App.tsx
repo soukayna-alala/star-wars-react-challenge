@@ -1,6 +1,6 @@
 import "./App.css";
-import { PlanetList } from "./components/PlanetList/PlanetList.tsx";
+import { StarShipList } from "./components/StarShipList/StarShipList.tsx";
 
 export function App() {
-  return <PlanetList></PlanetList>;
+  return <StarShipList></StarShipList>;
 }
