@@ -1,8 +1,13 @@
 .listItem {
-  /*background: linear-gradient(#ec97d1 30%, #d7a6f8, #f6bdf3);*/
   background: rgba(255, 255, 255, 0.6);
   border: none;
-  padding: 10px 40px;
+  padding: 10px 20px;
   color: #000000;
   font-size: 14px;
+}
+
+.copy {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

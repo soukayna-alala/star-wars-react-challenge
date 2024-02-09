@@ -2,12 +2,12 @@ import Styles from "./StarShip.module.css";
 import { Starship } from "./interfaces.ts";
 
 export function StarShip({ name, passengers, crew, films }: Starship) {
-  const { listItem } = Styles;
+  const { listItem, copy } = Styles;
 
   return (
     <li className={listItem}>
-      <div>
-        <strong>Passengers:</strong> {name}
+      <div className={copy}>
+        <strong>Name:</strong> {name}
       </div>
       <div>
         <strong>Passengers:</strong> {passengers}
