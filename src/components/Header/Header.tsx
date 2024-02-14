@@ -1,5 +1,5 @@
 import Styles from "./Header.module.css";
-import { cvUrl, email, linkedinUrl, SWAPILink } from "./constants.ts";
+import { list, SWAPILink } from "./constants.ts";
 import starWarsLogo from "../../assets/star-wars-logo.png";
 
 export const Header = () => {
@@ -8,19 +8,15 @@ export const Header = () => {
   return (
     <div>
       <ul className={urls}>
-        <li>
-          <a href={linkedinUrl} target={"_blank"}>
-            Linkedin
-          </a>
-        </li>
-        <li>
-          <a href={cvUrl} target={"_blank"}>
-            CV
-          </a>
-        </li>
-        <li>
-          <a href={email}>Email me</a>
-        </li>
+        {list.map(({ label, href }) => {
+          return (
+            <li key={label}>
+              <a href={href} target={"_blank"}>
+                {label}
+              </a>
+            </li>
+          );
+        })}
       </ul>
       <img className={logo} src={starWarsLogo} alt={"Star Wars Logo"} />
       <h1 className={text}>
