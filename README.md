@@ -1,3 +1,9 @@
+# Star wars react challenge
+
+by Soukayna Alala using React, Typescript and SWAPI
+
+![alt text](public/star-wars-react-challenge-screenshot.png "Title")
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
