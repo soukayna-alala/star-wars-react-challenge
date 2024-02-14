@@ -1,11 +1,13 @@
 import Styles from "./Header.module.css";
+import {
+  cvUrl,
+  email,
+  linkedinUrl,
+  starWarsLogo,
+  SWAPILink,
+} from "./constants.ts";
 
 export const Header = () => {
-  const starWarsLogo = "./src/assets/star-wars-logo.png";
-  const cvUrl =
-    "https://github.com/soukayna-alala/cv/blob/main/Soukayna-Alala-Junior-Front-End-Developer.pdf";
-  const linkedinUrl = "https://www.linkedin.com/in/soukayna-alala/";
-  const email = "mailto:soukayna.alala45@gmail.com?subject=hello";
   const { logo, text, urls } = Styles;
 
   return (
@@ -22,12 +24,15 @@ export const Header = () => {
           </a>
         </li>
         <li>
-          <a href={email}>E-mail</a>
+          <a href={email}>Email me</a>
         </li>
       </ul>
       <img className={logo} src={starWarsLogo} alt={"Star Wars Logo"} />
       <h1 className={text}>
-        Star Wars challenge by Soukayna Alala using React, Typescript and SWAPI.
+        Star Wars challenge by Soukayna Alala using React, Typescript and
+        <a href={SWAPILink} target={"_blank"}>
+          SWAPI
+        </a>
       </h1>
     </div>
   );
