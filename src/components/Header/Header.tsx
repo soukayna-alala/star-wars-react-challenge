@@ -1,11 +1,6 @@
 import Styles from "./Header.module.css";
-import {
-  cvUrl,
-  email,
-  linkedinUrl,
-  starWarsLogo,
-  SWAPILink,
-} from "./constants.ts";
+import { cvUrl, email, linkedinUrl, SWAPILink } from "./constants.ts";
+import starWarsLogo from "../../assets/star-wars-logo.png";
 
 export const Header = () => {
   const { logo, text, urls } = Styles;

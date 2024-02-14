@@ -1,4 +1,3 @@
-export const starWarsLogo = "./src/assets/star-wars-logo.png";
 export const cvUrl =
   "https://github.com/soukayna-alala/cv/blob/main/Soukayna-Alala-Junior-Front-End-Developer.pdf";
 export const linkedinUrl = "https://www.linkedin.com/in/soukayna-alala/";
